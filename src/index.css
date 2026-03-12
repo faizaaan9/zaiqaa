@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f5f7f5; color: #111c17; -webkit-font-smoothing: antialiased; }
+h1,h2,h3,h4,h5 { font-family: 'Playfair Display', serif; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: #89d1a8; border-radius: 99px; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.z-input {
+  border: 1.5px solid #e5e7eb; border-radius: 14px;
+  padding: 12px 16px; width: 100%; outline: none;
+  background: white; font-size: 14px; transition: all 0.2s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.z-input:focus { border-color: #1e7a4c; box-shadow: 0 0 0 3px rgba(30,122,76,0.1); }
+
+.btn-primary {
+  background: #1e7a4c; color: white; font-weight: 700;
+  border-radius: 14px; padding: 12px 24px; border: none;
+  cursor: pointer; transition: all 0.2s; font-family: 'Plus Jakarta Sans', sans-serif;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.btn-primary:hover { background: #19613d; }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-gold {
+  background: #e8a800; color: #0a2419; font-weight: 700;
+  border-radius: 14px; padding: 12px 24px; border: none;
+  cursor: pointer; transition: all 0.2s; font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.btn-gold:hover { background: #c98f00; }
+
+.card { background: white; border-radius: 16px; border: 1px solid #f0f4f1; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+.card-hover { transition: all 0.3s; }
+.card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); border-color: #dcf3e5; }
+
+.page-enter { animation: slideUp 0.4s cubic-bezier(0.16,1,0.3,1); }
+@keyframes slideUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+
+.gold-line { height: 2px; width: 40px; background: #e8a800; border-radius: 99px; }
+.halal-badge { display:inline-flex; align-items:center; gap:3px; background:rgba(30,122,76,0.12); border:1px solid rgba(30,122,76,0.25); color:#1e7a4c; font-size:10px; font-weight:700; padding:2px 8px; border-radius:99px; }
+.text-gradient { background: linear-gradient(135deg,#19613d,#e8a800); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
