@@ -1,17 +1,17 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
-import AuthPage          from "./pages/AuthPage";
-import HomePage          from "./pages/HomePage";
-import RestaurantPage    from "./pages/RestaurantPage";
-import CartPage          from "./pages/CartPage";
-import CheckoutPage      from "./pages/CheckoutPage";
-import OrdersPage        from "./pages/OrdersPage";
-import OrderTrackingPage from "./pages/OrderTrackingPage";
-import FavouritesPage    from "./pages/FavouritesPage";
-import ProfilePage       from "./pages/ProfilePage";
-import SearchPage        from "./pages/SearchPage";
-import CategoryPage      from "./pages/CategoryPage";
-import AppLayout         from "./components/layout/AppLayout";
+import AuthPage          from "./Pages/AuthPage";
+import HomePage          from "./Pages/HomePage";
+import RestaurantPage    from "./Pages/RestaurantPage";
+import CartPage          from "./Pages/CartPage";
+import CheckoutPage      from "./Pages/CheckoutPage";
+import OrdersPage        from "./Pages/OrdersPage";
+import OrderTrackingPage from "./Pages/OrderTrackingPage";
+import FavouritesPage    from "./Pages/FavouritesPage";
+import ProfilePage       from "./Pages/ProfilePage";
+import SearchPage        from "./Pages/SearchPage";
+import CategoryPage      from "./Pages/CategoryPage";
+import AppLayout         from "./Components/layout/AppLayout";
 
 function Guard({ children }) {
   const { user } = useAuth();
